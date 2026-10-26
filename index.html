@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Tarun Gautam, B.Tech Computer Science student at JECRC University.">
+  <title>Tarun Gautam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a class="logo" href="#home">TG<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-btn" aria-label="Toggle light and dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hi, I'm <span>Tarun Gautam</span></h1>
+        <h2>B.Tech Computer Science Student</h2>
+        <p class="intro">I am learning programming, web development, and problem-solving while building my technical skills through academic projects.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">Explore Projects</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">TG</div>
+        <h3>Tarun Gautam</h3>
+        <p>Computer Science & Engineering</p>
+        <p class="university">JECRC University</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="content-card">
+        <p>I am a B.Tech Computer Science and Engineering student at JECRC University. I am developing my skills in programming, web technologies, and AI-assisted development. My goal is to strengthen my fundamentals and apply what I learn to practical projects.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+      <h2 class="section-title">Education</h2>
+      <div class="content-card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p>Computer Science and Engineering</p>
+        <p>JECRC University</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="eyebrow">WHAT I AM LEARNING</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><span> C </span><h3>C Programming</h3><p>Programming fundamentals</p></div>
+        <div class="skill-card"><span>Py</span><h3>Python</h3><p>Basic programming and scripts</p></div>
+        <div class="skill-card"><span>HTML</span><h3>HTML</h3><p>Web page structure</p></div>
+        <div class="skill-card"><span>CSS</span><h3>CSS</h3><p>Web styling and layouts</p></div>
+        <div class="skill-card"><span>PS</span><h3>Problem Solving</h3><p>Logical thinking and practice</p></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="eyebrow">MY WORK</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-description">Explore my coursework and planned projects. Update each card as you complete and upload the corresponding work.</p>
+      <div class="project-controls">
+        <input id="projectSearch" type="search" placeholder="Search projects or technologies..." aria-label="Search projects">
+        <select id="technologyFilter" aria-label="Filter projects by technology">
+          <option value="all">All technologies</option>
+          <option value="python">Python</option>
+          <option value="quiz">Quiz</option>
+          <option value="book">Book</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
+      <section id="projects">
+        <h2>My Projects</h2>
+      
+        <div class="project-card">
+          <h3>Python Programs Collection</h3>
+          <p>
+            A collection of Python programs including factorial,
+            Fibonacci sequence, and structure-to-dictionary conversion.
+          </p>
+          <a href="projects/python-programs/README.md">
+            View Project
+          </a>
+        </div>
+      
+        <div class="project-card">
+          <h3>Messy Python Code</h3>
+          <p>
+            A Python project focused on understanding and improving
+            messy code through better formatting and readability.
+          </p>
+          <a href="projects/messy-python-code/README.md">
+            View Project
+          </a>
+        </div>
+      
+        <div class="project-card">
+          <h3>Bug Fixing with Cursor AI</h3>
+          <p>
+            A project demonstrating how to identify and fix Python
+            errors with the help of Cursor AI.
+          </p>
+          <a href="projects/bug-fixing-cursor-ai/README.md">
+            View Project
+          </a>
+        </div>
+      
+        <div class="project-card">
+          <h3>Interactive Quiz</h3>
+          <p>
+            A Python quiz project that asks questions and checks
+            the user's answers.
+          </p>
+          <a href="projects/interactive-quiz/quiz.py">
+            View Project
+          </a>
+        </div>
+      
+        <div class="project-card">
+          <h3>Book Reading List</h3>
+          <p>
+            A Python application for managing and tracking
+            a personal book reading list.
+          </p>
+          <a href="projects/book-reading-list/app.py">
+            View Project
+          </a>
+        </div>
+      </section>
+      <div id="projectGrid" class="projects-grid">
+        <article class="project-card" data-search="python programs collection factorial fibonacci structure dictionary python" data-tech="python">
+          <span class="project-number">01</span><p class="project-tag">Python</p>
+          <h3>Python Programs Collection</h3>
+          <p>A collection planned to include factorial, Fibonacci, and structure-to-dictionary conversion programs with documentation.</p>
+          <span class="status">Coursework project</span>
+        </article>
+        <article class="project-card" data-search="messy python code improvement python clean code" data-tech="python">
+          <span class="project-number">02</span><p class="project-tag">Python</p>
+          <h3>Messy Python Code Improvement</h3>
+          <p>A project focused on understanding and improving the readability of a Python code sample.</p>
+          <span class="status">Coursework project</span>
+        </article>
+        <article class="project-card" data-search="bug fixing cursor ai debugging python" data-tech="python">
+          <span class="project-number">03</span><p class="project-tag">AI & Coding</p>
+          <h3>Bug Fixing Using Cursor AI</h3>
+          <p>A learning project about identifying code issues and using an AI coding assistant to investigate possible fixes.</p>
+          <span class="status">Coursework project</span>
+        </article>
+        <article class="project-card" data-search="interactive quiz application quiz javascript web" data-tech="quiz web">
+          <span class="project-number">04</span><p class="project-tag">Web Development</p>
+          <h3>Interactive Quiz Application</h3>
+          <p>A quiz application planned to provide questions, answer selection, and a score summary.</p>
+          <span class="status">Coursework project</span>
+        </article>
+        <article class="project-card" data-search="book reading list application book javascript web" data-tech="book web">
+          <span class="project-number">05</span><p class="project-tag">Web Development</p>
+          <h3>Book Reading List Application</h3>
+          <p>An application planned to help users maintain a list of books they want to read or have finished reading.</p>
+          <span class="status">Coursework project</span>
+        </article>
+      </div>
+      <p id="noResults" class="no-results" hidden>No matching projects found.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="content-card contact-card">
+        <h3>Tarun Gautam</h3>
+        <p>JECRC University · B.Tech Computer Science and Engineering</p>
+        <p>Email: <a href="mailto:tarun.25bcon1193@jecrcu.edu.in">tarun.25bcon1193@jecrcu.edu.in</a></p>
+        <p class="muted">Add your GitHub profile link here after confirming the correct URL.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Tarun Gautam. Personal Portfolio.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
